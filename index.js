@@ -1,12 +1,19 @@
 var produce = require("immer").default;
-var React = require("react")
+var React = require("react");
 
 module.exports.useImmer = function useImmer(initialValue) {
-    const [val, updateValue] = React.useState(initialValue);
-    return [
-      val,
-      updater => {
-        updateValue(produce(updater));
-      }
-    ];
-  }
+  const [val, updateValue] = React.useState(initialValue);
+  return [
+    val,
+    updater => {
+      updateValue(produce(updater));
+    }
+  ];
+};
+
+module.exports.useImmerReducer = function useImmerReducer(
+  reducer,
+  initialState
+) {
+  return React.useReducer(produce(reducer), initialState);
+};
