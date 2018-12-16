@@ -3,6 +3,7 @@
   "version": "0.0.5",
   "description": "Use immer with React hooks",
   "main": "index.js",
+  "typings": "./index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
