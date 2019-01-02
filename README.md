@@ -68,6 +68,9 @@ Immer powered reducer, based on [`useReducer` hook](https://reactjs.org/docs/hoo
 Example: https://codesandbox.io/s/2zor1monvp
 
 ```javascript
+import React from "react";
+import { useImmerReducer } from "use-immer";
+
 const initialState = { count: 0 };
 
 function reducer(draft, action) {
