@@ -13,7 +13,8 @@ module.exports.useImmer = function useImmer(initialValue) {
 
 module.exports.useImmerReducer = function useImmerReducer(
   reducer,
-  initialState
+  initialState,
+  initialAction
 ) {
-  return React.useReducer(produce(reducer), initialState);
+  return React.useReducer(produce(reducer), initialState, initialAction);
 };
