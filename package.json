@@ -1,6 +1,6 @@
 {
   "name": "use-immer",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Use immer with React hooks",
   "main": "dist/use-immer.js",
   "umd:main": "dist/use-immer.umd.js",
@@ -31,10 +31,8 @@
     "url": "https://github.com/mweststrate/use-immer/issues"
   },
   "homepage": "https://github.com/mweststrate/use-immer#readme",
-  "dependencies": {
-    "immer": "^2.1.5"
-  },
   "peerDependencies": {
+    "immer": "^2.0.0",
     "react": "^16.8.0"
   },
   "devDependencies": {
