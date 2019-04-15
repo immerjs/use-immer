@@ -6,7 +6,7 @@ type Reducer<S = any, A = any> = (
   action: A,
 ) => void | S
 
-export function useImmer<S = any>(initialValue: S): [S, (draft: Draft<S>) => void]
+export function useImmer<S = any>(initialValue: S): [S, (draft: Draft<S>) => void | S]
 export function useImmer(initialValue: any) {
   const [val, updateValue] = useState(initialValue);
   return [
