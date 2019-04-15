@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/mweststrate/use-immer#readme",
   "dependencies": {
-    "immer": "^1.7.3"
+    "immer": "^2.1.5"
   }
 }
