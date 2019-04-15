@@ -2,15 +2,24 @@
   "name": "use-immer",
   "version": "0.1.0",
   "description": "Use immer with React hooks",
-  "main": "index.js",
-  "typings": "./index.d.ts",
+  "main": "dist/use-immer.js",
+  "umd:main": "dist/use-immer.umd.js",
+  "module": "dist/use-immer.module.js",
+  "jsnext:main": "dist/use-immer.module.js",
+  "react-native": "dist/use-immer.module.js",
+  "typings": "dist/use-immer.d.ts",
+  "source": "src/index.ts",
   "scripts": {
+    "build": "microbundle",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mweststrate/use-immer.git"
   },
+  "files": [
+    "dist/"
+  ],
   "keywords": [
     "immer",
     "react",
@@ -24,5 +33,13 @@
   "homepage": "https://github.com/mweststrate/use-immer#readme",
   "dependencies": {
     "immer": "^2.1.5"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.8.13",
+    "microbundle": "^0.11.0",
+    "typescript": "^3.4.3"
   }
 }
