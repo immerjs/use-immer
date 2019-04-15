@@ -16,5 +16,6 @@ module.exports.useImmerReducer = function useImmerReducer(
   initialState,
   initialAction
 ) {
-  return React.useReducer(produce(reducer), initialState, initialAction);
+  reducer = React.useMemo(() => produce(reducer), [produce, reducer]);
+  return React.useReducer(reducer, initialState, initialAction);
 };
