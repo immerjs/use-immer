@@ -7,7 +7,7 @@
   "module": "dist/use-immer.module.js",
   "jsnext:main": "dist/use-immer.module.js",
   "react-native": "dist/use-immer.module.js",
-  "typings": "dist/use-immer.d.ts",
+  "typings": "dist/index.d.ts",
   "source": "src/index.ts",
   "scripts": {
     "build": "microbundle",
