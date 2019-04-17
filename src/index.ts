@@ -1,7 +1,7 @@
 import produce, { Draft } from "immer"
 import { useState, useReducer, useMemo } from "react"
 
-type Reducer<S = any, A = any> = (
+export type Reducer<S = any, A = any> = (
   draftState: Draft<S>,
   action: A,
 ) => void | S
