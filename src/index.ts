@@ -1,5 +1,5 @@
 import produce, { Draft } from "immer";
-import { useState, useReducer, useMemo } from "react";
+import { useState, useReducer, useCallback } from "react";
 
 export type Reducer<S = any, A = any> = (
   draftState: Draft<S>,
@@ -25,6 +25,6 @@ export function useImmerReducer<S = any, A = any>(
   initialAction?: (initial: any) => S
 ): [S, React.Dispatch<A>];
 export function useImmerReducer(reducer, initialState, initialAction) {
-  const cachedReducer = useMemo(() => produce(reducer), [reducer]);
+  const cachedReducer = useCallback(produce(reducer), [reducer]);
   return useReducer(cachedReducer, initialState as any, initialAction);
 }
