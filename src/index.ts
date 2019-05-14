@@ -13,9 +13,9 @@ export function useImmer(initialValue: any) {
   const [val, updateValue] = useState(initialValue);
   return [
     val,
-    updater => {
+    useCallback(updater => {
       updateValue(produce(updater));
-    }
+    }, [])
   ];
 }
 
