@@ -12,7 +12,7 @@ A hook to use [immer](https://github.com/mweststrate/immer) as a React [hook](ht
 
 `useImmer(initialState)` is very similar to [`useState`](https://reactjs.org/docs/hooks-state.html).
 The function returns a tuple, the first value of the tuple is the current state, the second is the updater function,
-which accepts an [immer producer function](https://github.com/mweststrate/immer#api), in which the `draft` can be mutated freely, until the producer ends and and the changes will be made immutable and become the next state.
+which accepts an [immer producer function](https://github.com/mweststrate/immer#api), in which the `draft` can be mutated freely, until the producer ends and the changes will be made immutable and become the next state.
 
 Example: https://codesandbox.io/s/l97yrzw8ol
 
