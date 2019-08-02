@@ -4,7 +4,7 @@ A hook to use [immer](https://github.com/mweststrate/immer) as a React [hook](ht
 
 # Installation
 
-`npm install use-immer`
+`npm install immer use-immer`
 
 # API
 
