@@ -32,7 +32,7 @@
   },
   "homepage": "https://github.com/mweststrate/use-immer#readme",
   "peerDependencies": {
-    "immer": "^2.0.0 || ^3.0.0",
+    "immer": "^2.0.0 || ^3.0.0 || ^4.0.0",
     "react": "^16.8.0"
   },
   "devDependencies": {
