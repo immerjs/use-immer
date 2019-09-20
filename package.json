@@ -1,6 +1,6 @@
 {
   "name": "use-immer",
-  "version": "0.3.1",
+  "version": "0.3.4",
   "description": "Use immer with React hooks",
   "main": "dist/use-immer.js",
   "umd:main": "dist/use-immer.umd.js",
