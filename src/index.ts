@@ -6,7 +6,7 @@ export type Reducer<S = any, A = any> = (
   action: A
 ) => void | S;
 
-export type ImmerHook<S> = [S, (f: (draft: Draft<S>) => void | S) => void]
+export type ImmerHook<S> = [S, (f: (draft: Draft<S>) => void | S) => void];
 
 export function useImmer<S = any>(
   initialValue: S | (() => S)
