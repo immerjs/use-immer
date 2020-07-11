@@ -6,11 +6,12 @@ export type Reducer<S = any, A = any> = (
   action: A
 ) => void | S;
 
-export type ImmerHook<S> = [S, (f: (draft: Draft<S>) => void | S) => void];
+export type Updater<S> = (f: (draft: Draft<S>) => void | S) => void;
+export type ImmerHook<S> = [S, Updater<S>];
 
 export function useImmer<S = any>(
   initialValue: S | (() => S)
-): [S, (f: (draft: Draft<S>) => void | S) => void];
+): [S, Updater<S>];
 
 export function useImmer(initialValue: any) {
   const [val, updateValue] = useState(initialValue);
