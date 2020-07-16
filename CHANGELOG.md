@@ -1,3 +1,7 @@
+# 0.4.1
+
+* Exported type for the updater function, `Updater<T>`. See [#53](https://github.com/immerjs/use-immer/pull/53) by [@hoilzz](https://github.com/hoilzz)
+
 # 0.4.0
 
 * Improved performance, see [#50](https://github.com/immerjs/use-immer/pull/50) by [@sophibits](https://github.com/sophiebits)
