@@ -9,6 +9,7 @@
   "react-native": "dist/use-immer.module.js",
   "typings": "dist/index.d.ts",
   "source": "src/index.ts",
+  "sideEffects": false,
   "scripts": {
     "build": "microbundle",
     "test": "echo \"Error: no test specified\" && exit 1"
