@@ -1,4 +1,4 @@
-import produce, { Draft, nothing } from "immer";
+import produce, { Draft, nothing, freeze } from "immer";
 import { useState, useReducer, useCallback, useMemo, Dispatch } from "react";
 
 export type Reducer<S = any, A = any> = (
@@ -11,12 +11,17 @@ export type ImmerHook<S> = [S, Updater<S>];
 export function useImmer<S = any>(initialValue: S | (() => S)): ImmerHook<S>;
 
 export function useImmer(initialValue: any) {
-  const [val, updateValue] = useState(initialValue);
+  const [val, updateValue] = useState(() =>
+    freeze(
+      typeof initialValue === "function" ? initialValue() : initialValue,
+      true
+    )
+  );
   return [
     val,
     useCallback((updater) => {
       if (typeof updater === "function") updateValue(produce(updater));
-      else updateValue(updater);
+      else updateValue(freeze(updater));
     }, []),
   ];
 }
