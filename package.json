@@ -1,6 +1,6 @@
 {
   "name": "use-immer",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "Use immer with React hooks",
   "main": "dist/use-immer.js",
   "umd:main": "dist/use-immer.umd.js",
@@ -34,7 +34,7 @@
   "homepage": "https://github.com/mweststrate/use-immer#readme",
   "peerDependencies": {
     "immer": ">=2.0.0",
-    "react": "^16.8.0 || ^17.0.1"
+    "react": "^17.0.1 || ^18.0.0"
   },
   "devDependencies": {
     "@types/react": "^16.9.56",
