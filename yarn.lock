@@ -1895,9 +1895,9 @@ icss-replace-symbols@1.1.0, icss-replace-symbols@^1.1.0:
   integrity sha1-Bupvg2ead0njhs/h/oEq5dsiPe0=
 
 immer@^9.0.0:
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/immer/-/immer-9.0.0.tgz#37d0e2beb928b495be48abf98d35cf76c64ee158"
-  integrity sha512-/L68D6hSjuQoeymW42UQLTMHvRZCapuSBBm0CfKbIyoqMDH+p8PHg9Cti3eBQA+tCRAOUOSBgn8Ji70YXWmBkw==
+  version "9.0.6"
+  resolved "https://registry.yarnpkg.com/immer/-/immer-9.0.6.tgz#7a96bf2674d06c8143e327cbf73539388ddf1a73"
+  integrity sha512-G95ivKpy+EvVAnAab4fVa4YGYn24J1SpEktnJX7JJ45Bd7xqME/SCplFzYFmTbrkwZbQ4xJK1xMTUYBkN6pWsQ==
 
 import-cwd@^2.0.0:
   version "2.1.0"
