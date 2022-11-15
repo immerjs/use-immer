@@ -9,6 +9,13 @@
   "react-native": "dist/use-immer.module.js",
   "typings": "dist/index.d.ts",
   "source": "src/index.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/use-immer.js",
+      "import": "./dist/use-immer.module.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
   "sideEffects": false,
   "scripts": {
     "build": "microbundle",
