@@ -1,3 +1,12 @@
+# 0.8.1
+
+* Improved overloads of useImmerReducer, see #108.
+
+# 0.8.0
+
+* Support React 18
+* Added `exports` defininition to package.json, see #101
+
 # 0.4.1
 
 * Exported type for the updater function, `Updater<T>`. See [#53](https://github.com/immerjs/use-immer/pull/53) by [@hoilzz](https://github.com/hoilzz)
