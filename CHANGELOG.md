@@ -1,3 +1,7 @@
+# 0.9.0
+
+* Added Immer 10 support
+
 # 0.8.1
 
 * Improved overloads of useImmerReducer, see #108.
