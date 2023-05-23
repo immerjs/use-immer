@@ -7,16 +7,16 @@ export type ImmerHook<S> = [S, Updater<S>];
 
 export function useImmer<S = any>(initialValue: S | (() => S)): ImmerHook<S>;
 
-export function useImmer(initialValue: any) {
-  const [val, updateValue] = useState(() =>
+export function useImmer<T = any>(initialValue: T) {
+  const [val, updateValue] = useState<T>(() =>
     freeze(
       typeof initialValue === "function" ? initialValue() : initialValue,
       true
     )
   );
   return [
-    val,
-    useCallback((updater) => {
+    val as T,
+    useCallback((updater: T) => {
       if (typeof updater === "function") updateValue(produce(updater));
       else updateValue(freeze(updater));
     }, []),
