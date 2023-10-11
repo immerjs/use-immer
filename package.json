@@ -4,21 +4,26 @@
   "description": "Use immer with React hooks",
   "main": "dist/use-immer.js",
   "umd:main": "dist/use-immer.umd.js",
-  "module": "dist/use-immer.module.js",
-  "jsnext:main": "dist/use-immer.module.js",
-  "react-native": "dist/use-immer.module.js",
+  "module": "dist/use-immer.module.mjs",
+  "jsnext:main": "dist/use-immer.module.mjs",
+  "react-native": "dist/use-immer.module.mjs",
   "typings": "dist/index.d.ts",
   "source": "src/index.ts",
   "exports": {
     ".": {
-      "require": "./dist/use-immer.js",
-      "import": "./dist/use-immer.module.js",
-      "types": "./dist/index.d.ts"
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/use-immer.module.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/use-immer.js"
+      }
     }
   },
   "sideEffects": false,
   "scripts": {
-    "build": "microbundle",
+    "build": "microbundle && cp ./dist/index.d.ts ./dist/index.d.mts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -46,7 +51,7 @@
   "devDependencies": {
     "@types/react": "^16.9.56",
     "immer": "^9.0.0 || ^10.0.0",
-    "microbundle": "^0.12.4",
+    "microbundle": "^0.15.1",
     "typescript": "^4.0.5"
   }
 }
