@@ -40,7 +40,7 @@
   },
   "homepage": "https://github.com/mweststrate/use-immer#readme",
   "peerDependencies": {
-    "immer": ">=2.0.0",
+    "immer": ">=8.0.0",
     "react": "^16.8.0 || ^17.0.1 || ^18.0.0"
   },
   "devDependencies": {
