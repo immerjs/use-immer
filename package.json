@@ -46,7 +46,7 @@
   "homepage": "https://github.com/mweststrate/use-immer#readme",
   "peerDependencies": {
     "immer": ">=8.0.0",
-    "react": "^16.8.0 || ^17.0.1 || ^18.0.0"
+    "react": "^16.8.0 || ^17.0.1 || ^18.0.0 || ^19.0.0"
   },
   "devDependencies": {
     "@types/react": "^16.9.56",
